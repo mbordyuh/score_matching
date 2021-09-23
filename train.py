@@ -15,9 +15,9 @@ def train_and_visualize():
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
-        if epoch % 100 == 0:
+        if epoch % 5 == 0:
             print(epoch)
-        plot_gradients(model, dataset, epoch)
+            plot_gradients(model, dataset, epoch)
 
 
 if __name__ == '__main__':

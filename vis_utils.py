@@ -16,7 +16,7 @@ def plot_gradients(model, data, epoch):
     scores_norm = np.linalg.norm(scores, axis=-1, ord=2, keepdims=True)
     scores_log1p = scores / (scores_norm + 1e-9) * np.log1p(scores_norm)
     # Perform the plots
-    plt.figure(figsize=(15, 15))
+    plt.figure(figsize=(10, 10))
     plt.scatter(*data.t().numpy(),  s=0.5)
     plt.quiver(*xx.T, *scores_log1p.T, width=0.002)
     plt.xlim(-range, range)
