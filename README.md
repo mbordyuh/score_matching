@@ -5,3 +5,4 @@ on the toy dataset for education purposes.
 
 python train.py to generate the gif of the gradient visualization.
 
+![gradient](https://user-images.githubusercontent.com/30438883/134584145-da4834eb-3f83-4cde-bb77-1eb4c205d03d.gif)
